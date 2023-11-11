@@ -1,0 +1,126 @@
+#cards-container{
+    background: #094b65;
+    padding: 15px 9%;
+    padding-bottom: 50px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+#cards-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cards-container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#cards-container .box-container .box .card-img{
+    height: 80px;
+}
+
+#cards-container .box-container .box .cardh3{
+    color: #094b65;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+#cards-container .box-container .box .cardp{
+    color: #094b65;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+#cards-container .box-container .box .cardbtn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #094b65;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+#cards-container .box-container .box .cardbtn:hover{
+    letter-spacing: 2px;
+}
+
+#cards-container .box-container .box {
+    box-shadow: 0 10px 15px #094b65;
+    transform: scale(1.03);
+}
+
+
+.workbtnbox{
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.workbtn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #e0ebef;
+    color: rgb(15, 14, 14);
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.workbtn:hover{
+    letter-spacing: 2px;
+}
+
+
+#cards-container {
+    background: #094b65;
+    padding: 15px 5%;
+    padding-bottom: 50px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+
+/* Adjusting for medium screens */
+@media screen and (max-width: 1024px) {
+    #cards-container .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Show 2 cards in a row for medium devices */
+        gap: 30px;
+        padding: 15px 3%; /* Adjusted padding for medium screens */
+    }
+}
+
+/* Adjusting for smaller screens */
+@media screen and (max-width: 768px) {
+    #cards-container .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        gap: 15px;
+        padding: 15px 2%; 
+    }
+}
+
+/* Adjusting for medium screens */
+@media screen and (max-width: 1336) {
+    #cards-container .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        gap: 30px;
+        padding: 15px 3%;
+    }
+}
