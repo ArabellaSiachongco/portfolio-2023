@@ -171,7 +171,6 @@ body {
   background-size: cover;
   display: inline-block;
   transition: 0.5s;
-
 }
 
 .slide .item:nth-child(1),
